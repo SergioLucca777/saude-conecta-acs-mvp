@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Conecta ACS - MVP Apresentação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Saúde Conecta ACS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="visita.html">Visita</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="relatorio.html">Relatório</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="login-page">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF (simulado)">
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha (simulada)">
+            </div>
+            <button type="button" onclick="alert('Login simulado! Redirecionando para o Dashboard...'); window.location.href='dashboard.html';">Entrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saúde Conecta ACS - MVP para Maratona de Inovação</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

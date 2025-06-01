@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Visita - Saúde Conecta ACS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Saúde Conecta ACS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="visita.html" class="active">Visita</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="relatorio.html">Relatório</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="visita-page">
+        <h2>Registro de Visita Domiciliar (Simulado)</h2>
+        <form id="visita-form">
+            <div class="form-group">
+                <label for="familia">Família Visitada:</label>
+                <select id="familia" name="familia">
+                    <option value="">Selecione a família...</option>
+                    <option value="silva">Família Silva (Rua A, 123)</option>
+                    <option value="souza">Família Souza (Rua B, 45)</option>
+                    <option value="pereira">Família Pereira (Rua C, 67)</option>
+                    <!-- Adicionar mais famílias simuladas -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data-visita">Data da Visita:</label>
+                <input type="date" id="data-visita" name="data-visita">
+            </div>
+            <div class="form-group">
+                <label for="motivo">Motivo da Visita:</label>
+                <select id="motivo" name="motivo">
+                    <option value="">Selecione...</option>
+                    <option value="acompanhamento">Acompanhamento (Gestante, Hipertenso, etc.)</option>
+                    <option value="busca_ativa">Busca Ativa (Vacina, Consulta)</option>
+                    <option value="cadastro">Cadastro/Atualização</option>
+                    <option value="orientacao">Orientação/Prevenção</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="observacoes">Observações/Orientações:</label>
+                <textarea id="observacoes" name="observacoes" placeholder="Descreva brevemente a visita, orientações, encaminhamentos..."></textarea>
+            </div>
+             <div class="form-group">
+                <label>Funcionamento Offline Simulado:</label>
+                <p style="font-style: italic; color: #555;">Este registro seria salvo localmente mesmo sem conexão com a internet.</p>
+                 <div class="offline-indicator" id="offline-status">Modo Offline Ativo</div>
+            </div>
+            <button type="button" onclick="alert(\'Visita simulada registrada com sucesso!\"); document.getElementById(\'visita-form\\\\').reset(); showOfflineIndicator();">Registrar Visita</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saúde Conecta ACS - MVP para Maratona de Inovação</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo - Saúde Conecta ACS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluiria biblioteca de mapa real aqui (ex: Leaflet, Mapbox GL JS) -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /> -->
+    <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> -->
+</head>
+<body>
+    <header>
+        <h1>Saúde Conecta ACS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="visita.html">Visita</a></li>
+                <li><a href="mapa.html" class="active">Mapa</a></li>
+                <li><a href="relatorio.html">Relatório</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="mapa-page">
+        <h2>Mapa Interativo do Território (Simulado)</h2>
+        <div class="map-controls">
+            <p><strong>Filtros (Simulados):</strong></p>
+            <button type="button" onclick="alert(\'Simulando filtro: Mostrando apenas gestantes no mapa.\')">Mostrar Gestantes</button>
+            <button type="button" onclick="alert(\'Simulando filtro: Mostrando áreas de risco cadastradas.\')">Mostrar Áreas de Risco</button>
+            <button type="button" onclick="alert(\'Simulando filtro: Mostrando todas as famílias.\')">Limpar Filtros</button>
+            <hr style="margin: 1rem 0;">
+            <button type="button" onclick="alert(\'Simulando: Clique no mapa para adicionar um alerta/nota geolocalizada.\')">Adicionar Alerta/Nota</button>
+        </div>
+        <div id="map-container">
+            <!-- Em um MVP real, este container seria usado por uma biblioteca JS para renderizar o mapa -->
+            Mapa Interativo Seria Exibido Aqui (Placeholder)
+            <br><br>
+            <i>(Simulação: Pontos representariam famílias. Ao clicar, mostraria dados básicos. Cores poderiam indicar status.)</i>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saúde Conecta ACS - MVP para Maratona de Inovação</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Script específico do mapa iria aqui -->
+    <!-- <script src="map-script.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - Saúde Conecta ACS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Saúde Conecta ACS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="visita.html">Visita</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="relatorio.html" class="active">Relatório</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="relatorio-page">
+        <h2>Relatório Simplificado (Simulado)</h2>
+        <p>Exemplo de como indicadores poderiam ser visualizados pelo ACS ou Gestor.</p>
+
+        <div class="report-item">
+            <h4>Acompanhamento de Gestantes</h4>
+            <p><strong>Total:</strong> 8</p>
+            <p><strong>1º Trimestre:</strong> 2</p>
+            <p><strong>2º Trimestre:</strong> 3</p>
+            <p><strong>3º Trimestre:</strong> 3</p>
+            <p><strong>Consultas em dia:</strong> 7/8 (Simulado)</p>
+        </div>
+
+        <div class="report-item">
+            <h4>Monitoramento de Hipertensos</h4>
+            <p><strong>Total:</strong> 25</p>
+            <p><strong>Com PA controlada (última visita):</strong> 21/25 (Simulado)</p>
+            <p><strong>Visitas no último mês:</strong> 18/25 (Simulado)</p>
+        </div>
+
+         <div class="report-item">
+            <h4>Cobertura Vacinal (Crianças 0-2 anos)</h4>
+            <p><strong>Total:</strong> 12</p>
+            <p><strong>Esquema vacinal em dia:</strong> 10/12 (Simulado)</p>
+            <p><strong>Necessitando busca ativa:</strong> 2 (Simulado)</p>
+        </div>
+
+        <button type="button" onclick="alert(\"Funcionalidade de exportar relatório não disponível neste MVP.\")">Exportar Relatório (Simulado)</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saúde Conecta ACS - MVP para Maratona de Inovação</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
